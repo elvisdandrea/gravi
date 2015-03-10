@@ -1,7 +1,7 @@
 <article id="main" class="container special">
     <a href="#" class="image featured"><img src="{$smarty.const.T_IMGURL}/pic06.jpg" alt="" /></a>
     <header>
-        <h2><a href="#">Sed massa imperdiet magnis</a></h2>
+        <h2><a href="#">GRAVI Soluções digitais</a></h2>
         <p>
             Sociis aenean eu aenean mollis mollis facilisis primis ornare penatibus aenean. Cursus ac enim
             pulvinar curabitur morbi convallis. Lectus malesuada sed fermentum dolore amet.

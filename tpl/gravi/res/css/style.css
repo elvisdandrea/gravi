@@ -1227,3 +1227,8 @@
 			{
 				text-align: center;
 			}
+
+.reel article {
+	height: 30em;
+	vertical-align: top;
+}
