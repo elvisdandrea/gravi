@@ -35,14 +35,14 @@
 
 			
 		<!-- Main -->
-			<div class="wrapper style2">
+			<!--<div class="wrapper style2">
 
-				{include "home/main.tpl"}
 
-			</div>
+
+			</div>-->
 
 		<!-- Features -->
-		{include "home/features.tpl"}
+		
 
 		<!-- Footer -->
 			<div id="footer">
