@@ -53,13 +53,14 @@ class homeControl extends Control {
      * @param   array   $uri        - The URI array
      */
     public function itStarts($uri = array()) {
+
         if (count($uri) > 0) {
             ob_start();
             Core::runMethod($uri);
             $result = ob_get_contents();
             ob_end_clean();
-            if ($result == '')
-                $result = $this->view()->get404();
+            #if ($result == '')
+            #    $result = $this->view()->get404();
 
             $this->view()->setVariable('page_content', $result);
         }

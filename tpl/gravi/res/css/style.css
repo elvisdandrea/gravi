@@ -1,7 +1,7 @@
 @charset 'UTF-8';
 /**@import url('http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600');**/
 @import url('fontes.css');
-@import url('font-awesome.min.css');
+/**@import url('font-awesome.min.css');**/
 
 	body
 	{
@@ -23,7 +23,7 @@
 			animation: none !important;
 		}
 
-	body,input,textarea,select
+	body,textarea,select
 	{
 		font-size: 15pt;
 		line-height: 1.85em;
@@ -82,6 +82,7 @@
 		color: #C33931;
 		border-bottom: solid 1px rgba(128,128,128,0.15);
 		text-decoration: none;
+        cursor: pointer
 		-moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
 		-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
 		-o-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
@@ -249,13 +250,41 @@
 				width: 100%;
 			}
 
-			.image.featured
+			#features article span
 			{
 				display: block;
 				width: 100%;
-				margin: 0 0 4em 0;
+                height: 200px;
+				margin: 0 0 2em 0;
+                position: relative;
 			}
-			
+
+			#features article span img
+			{
+				left: 50%;
+                margin: 15px 0 0 -85px;
+                position: absolute;
+                border-radius: 100%;
+                -moz-border-radius: 100%;
+                -webkit-border-radius: 100%;
+                -o-border-radius: 100%;
+                -ms-border-radius: 100%;
+                transition: box-shadow 0.35s ease-in-out;
+                -moz-transition: box-shadow 0.35s ease-in-out;
+                -webkit-transition: box-shadow 0.35s ease-in-out;
+                -o-transition: box-shadow 0.35s ease-in-out;
+                -ms-transition: box-shadow 0.35s ease-in-out;
+			}
+
+			#features article:hover > span img
+			{
+                box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+                -moz-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+                -webkit-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+                -o-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+                -ms-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+			}
+
 			.image.left
 			{
 				float: left;
@@ -427,12 +456,14 @@
 			{
 				-webkit-appearance: none;
 				display: block;
+                float: left;
 				border: 0;
 				background: #fafafa;
-				width: 100%;
+				width: 95%;
 				border-radius: 0.5em;
 				border: solid 1px #E5E5E5;
 				padding: 1em;
+                margin-bottom: 20px;
 				-moz-transition: background-color 0.35s ease-in-out, border-color 0.35s ease-in-out;
 				-webkit-transition: background-color 0.35s ease-in-out, border-color 0.35s ease-in-out;
 				-o-transition: background-color 0.35s ease-in-out, border-color 0.35s ease-in-out;
@@ -492,6 +523,16 @@
 				{
 					border: 0;
 				}
+		
+			form .timestamp
+			{
+				margin-left: 10px;
+			}
+		
+			form hr
+			{
+				border-top: 1px solid rgba(128, 128, 128, 0.2);
+			}
 			
 	/* Table */
 	
@@ -620,12 +661,12 @@
 
 		.icon:before {
 			display: inline-block;
-			font-family: FontAwesome;
-			font-size: 1.25em;
+			font-family: Gravi Icons;
+			font-size: 1.5em;
 			text-decoration: none;
 			font-style: normal;
 			font-weight: normal;
-			line-height: 1;
+			line-height: 1.6;
 			-webkit-font-smoothing:antialiased;
 			-moz-osx-font-smoothing:grayscale;
 		}
@@ -650,8 +691,15 @@
 		
 			header .icon.circled
 			{
-				margin: 0 0 2em 0;
+				margin: 0 0 1em 0;
+                padding: 3px;
 			}
+        
+        .fa-twitter:before{content:"\e600"}
+        .fa-facebook:before{content:"\e601"}
+        .fa-linkedin:before{content:"\e602"}
+        .fa-seta:before{content:"\e603"; font-size: 2.3em;}
+        .fa-envelope:before{content:"\e604"}
 
 /*********************************************************************************/
 /* Wrapper                                                                       */
@@ -756,7 +804,7 @@
 			font: 2.6em 'Ubuntu Light';
 			margin: 0;
             color: #FFF;
-            text-align: left;
+            text-align: center;
             text-shadow: 1px 1px 5px #000;
 		}
 	
@@ -768,10 +816,11 @@
 		#header .button
 		{
 			display: inline-block;
+            font-family: Gravi Icons;
 			border-radius: 100%;
 			width: 5.5em;
 			height: 5.5em;
-			line-height: 5.4em;
+			line-height: 6.5em;
 			text-align: center;
 			font-size: 1.25em;
 			padding: 0;
@@ -808,15 +857,25 @@
 
 	#nav
 	{
-		position: absolute;
+        background: rgba(195, 57, 49, 0.2);
+		position: fixed;
 		top: 0;
 		left: 0;
 		width: 100%;
-		text-align: center;
-		padding: 1.5em 0 1.5em 0;
+		text-align: right;
+		padding: 1em 0 1em 0;
 		z-index: 1;
 		overflow: hidden;
+        transition: background 0.35s ease-in-out;
+        -moz-transition: background 0.35s ease-in-out;
+        -webkit-transition: background 0.35s ease-in-out;
+        -o-transition: background 0.35s ease-in-out;
+        -ms-transition: background 0.35s ease-in-out;
 	}
+	#nav:hover
+	{
+        background: rgba(195, 57, 49, 0.8);
+    }
 	
 		#nav > ul
 		{
@@ -824,39 +883,8 @@
 			position: relative;
 			display: inline-block;
 			margin: 0;
-
 			height: 21px;
-			border-left: solid 1px rgba(192,192,192,0.35);
-			border-right: solid 1px rgba(192,192,192,0.35);
 		}
-		
-			#nav > ul:before,
-			#nav > ul:after
-			{
-				content: '';
-				display: block;
-				width: 300%;
-				position: absolute;
-				top: 50%;
-				margin-top: -2px;
-
-				height: 5px;
-				border-top: solid 1px rgba(192,192,192,0.35);
-				border-bottom: solid 1px rgba(192,192,192,0.35);
-			}
-		
-			#nav > ul:before
-			{
-				left: 100%;
-				margin-left: 1px;
-			}
-		
-			#nav > ul:after
-			{
-				right: 100%;
-				margin-right: 1px;
-			}
-		
 			#nav > ul > li
 			{
 				display: inline-block;
@@ -864,6 +892,7 @@
 				border-radius: 0.5em;
 				padding: 0.85em;
 				border: solid 1px transparent;
+                font: 0.9em 'Ubuntu Light';
 				-moz-transition: color 0.35s ease-in-out, border-color 0.35s ease-in-out;
 				-webkit-transition: color 0.35s ease-in-out, border-color 0.35s ease-in-out;
 				-o-transition: color 0.35s ease-in-out, border-color 0.35s ease-in-out;
@@ -871,7 +900,7 @@
 				transition: color 0.35s ease-in-out, border-color 0.35s ease-in-out;
 			}
 			
-				#nav > ul > li.active
+				#nav > ul > li.active, #nav > ul > li:hover
 				{
 					border-color: rgba(192,192,192,0.35);
 				}
@@ -1227,8 +1256,3 @@
 			{
 				text-align: center;
 			}
-
-.reel article {
-	height: 30em;
-	vertical-align: top;
-}

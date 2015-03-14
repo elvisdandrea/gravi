@@ -100,6 +100,6 @@ var Main = new Main();
 /**
  * Default Actions call
  */
-Main.linkActions();
+//Main.linkActions();
 Main.formActions();
 

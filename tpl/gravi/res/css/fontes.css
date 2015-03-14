@@ -25,3 +25,12 @@
          url('../fonts/ubuntu-bold.ttf') format('truetype'),
          url('../fonts/ubuntu-bold.svg#ubunturegular') format('svg');
 }
+@font-face {
+    font-family: 'Gravi Icons';
+    src: url('../fonts/gravi-icon.eot');
+    src: url('../fonts/gravi-icon.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gravi-icon.woff2') format('woff2'),
+         url('../fonts/gravi-icon.woff') format('woff'),
+         url('../fonts/gravi-icon.ttf') format('truetype'),
+         url('../fonts/gravi-icon.svg#gravi-icon') format('svg');
+}
