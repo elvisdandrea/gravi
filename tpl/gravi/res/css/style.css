@@ -1256,3 +1256,7 @@
 			{
 				text-align: center;
 			}
+
+			#mailmsg {
+				float: right;
+			}

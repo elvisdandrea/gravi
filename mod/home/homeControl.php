@@ -59,8 +59,8 @@ class homeControl extends Control {
             Core::runMethod($uri);
             $result = ob_get_contents();
             ob_end_clean();
-            #if ($result == '')
-            #    $result = $this->view()->get404();
+            if ($result == '')
+                $result = $this->view()->get404();
 
             $this->view()->setVariable('page_content', $result);
         }
