@@ -72,7 +72,7 @@
                     <p>Siga-nos e fique por dentro do do nosso mundo.</p>
                     <ul class="icons">
                         <li><a href="http://twitter.com/GraviWeb" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-                        <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                        <li><a href="https://www.facebook.com/graviweb" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
                         <li><a href="#" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
                     </ul>
                 </section>
