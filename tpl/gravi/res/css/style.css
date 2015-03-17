@@ -1105,6 +1105,7 @@
 			color: rgba(128,128,128,0.75);
 			font-size: 0.8em;
 			cursor: default;
+			margin-top: 2em;
 		}
 
 			#footer .copyright a
@@ -1260,3 +1261,13 @@
 			#mailmsg {
 				float: right;
 			}
+
+.fb-like-box,
+.fb-like-box span,
+.fb-like-box span iframe[style] {
+	width: 100% !important;
+}
+
+ul.uiList {
+	height: 100px !important;
+}

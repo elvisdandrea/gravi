@@ -77,6 +77,8 @@
                     </ul>
                 </section>
 
+                <div style="background-color: #FFFFFF;" class="fb-like-box" data-href="https://www.facebook.com/graviweb" data-height="250px" data-width="1000px" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
+
                 <!-- Copyright -->
                 <div class="copyright">
                     <ul class="menu">

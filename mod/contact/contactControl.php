@@ -11,6 +11,10 @@ class contactControl extends Control {
     public function send() {
 
         $post = $this->getPost();
+
+        if (!$this->validatePost('nome','email','message'))
+            $this->commitReplace('Hey, informe todos os campos acima!', '#mailmsg', false);
+
         require_once LIBDIR . '/class.phpmailer.php';
         require_once LIBDIR . '/class.smtp.php';
         $mail = new PHPMailer();
