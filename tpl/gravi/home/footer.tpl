@@ -43,6 +43,7 @@
             <section class="6u" style="padding: 0 50px;">
                 <header>
                     <h2 class="icon fa-envelope circled"></h2><br />
+                    <a href="mailto:contato@gravi.com.br">contato@gravi.com.br</a></small><br><br>
                     Fale com a gente.
                     <span class="timestamp">Conversando a gente se entende.</span>
                 </header>
