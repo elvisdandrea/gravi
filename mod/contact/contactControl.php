@@ -36,7 +36,7 @@ class contactControl extends Control {
         $mail->Subject = 'Contato Gravi.com.br: ' . $post['nome'];
         $mail->Body = 'Mensagem: ' . $post['message'];
 
-        $mail->addAddress('mkt@gravi.com.br');
+        $mail->addAddress('elvis.gravi@gmail.com');
 
         if ($mail->send()) {
             $this->commitHide('#sendmail');
