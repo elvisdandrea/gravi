@@ -9,30 +9,15 @@
                     Siga-nos no Twitter.
                     <span class="timestamp"><a href="http://twitter.com/GraviWeb">twitter.com/GraviWeb</a></span>
                 </header>
+                <div class="social">
+                    <div style="background-color: #FFFFFF;" class="fb-like-box" data-href="https://www.facebook.com/graviweb" data-height="250px" data-width="1000px" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
+                </div>
                 <ul class="divided">
                     <!--
                     <li>
                         <article class="tweet">
                             Amet nullam fringilla nibh nulla convallis tique ante sociis accumsan.
                             <span class="timestamp">5 minutes ago</span>
-                        </article>
-                    </li>
-                    <li>
-                        <article class="tweet">
-                            Hendrerit rutrum quisque.
-                            <span class="timestamp">30 minutes ago</span>
-                        </article>
-                    </li>
-                    <li>
-                        <article class="tweet">
-                            Curabitur donec nulla massa laoreet nibh. Lorem praesent montes.
-                            <span class="timestamp">3 hours ago</span>
-                        </article>
-                    </li>
-                    <li>
-                        <article class="tweet">
-                            Lacus natoque cras rhoncus curae dignissim ultricies. Convallis orci aliquet.
-                            <span class="timestamp">5 hours ago</span>
                         </article>
                     </li>
                     -->
@@ -58,7 +43,6 @@
                 </form>
                 <div id="mailmsg"></div>
             </section>
-            </section>
 
         </div>
         <hr />
@@ -77,8 +61,6 @@
                         <li><a href="#" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
                     </ul>
                 </section>
-
-                <div style="background-color: #FFFFFF;" class="fb-like-box" data-href="https://www.facebook.com/graviweb" data-height="250px" data-width="1000px" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
 
                 <!-- Copyright -->
                 <div class="copyright">
