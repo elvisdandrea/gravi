@@ -38,12 +38,16 @@ class contactControl extends Control {
 
         $mail->addAddress('elvis.gravi@gmail.com');
 
+        $this->model()->saveContact($mail);
+
         if ($mail->send()) {
             $this->commitHide('#sendmail');
             $this->commitReplace('Em breve entraremos em contato. Obrigado! Aproveite e nos siga no twitter!', '#mailmsg');
         }
         else
             $this->commitReplace('Oh não, o serviço de e-mail está lotado! Por favor, envie um e-mail para mkt@gravi.com.br e nos informe sobre isso!', '#mailmsg');
+
+
     }
 
 }
