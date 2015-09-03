@@ -2,7 +2,7 @@
 
     <section id="features" class="container special">
         <header>
-            <h2>Soluções digitais para seus negócios darem certo</h2>
+            <h2>Soluções digitais para impulsionar seus negócios</h2>
             <p>Você precisa de agilidade e eficiência em seus negócios, nós garantimos que isso aconteça.</p>
         </header>
         <div class="row">
