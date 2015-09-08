@@ -37,6 +37,8 @@
 
                     <input type="email" name="email" id="email" value="" placeholder="Digite seu e-mail:">
 
+                    <input type="text" name="phone" id="phone" value="" placeholder="Digite seu telefone:">
+
                     <textarea id="mensagem" name="message" placeholder="Deixe sua mensagem:"></textarea>
 
                     <input id="sendmail" type="submit" id="enviar" value="Enviar mensagem">

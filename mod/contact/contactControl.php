@@ -13,7 +13,7 @@ class contactControl extends Control {
         $post = $this->getPost();
 
         if (!$this->validatePost('nome','email','message'))
-            $this->commitReplace('Hey, informe todos os campos acima!', '#mailmsg', false);
+            $this->commitReplace('Hey, informe os campos acima!', '#mailmsg', false);
 
         require_once LIBDIR . '/class.phpmailer.php';
         require_once LIBDIR . '/class.smtp.php';
@@ -34,18 +34,20 @@ class contactControl extends Control {
         $mail->addReplyTo($post['email']);
 
         $mail->Subject = 'Contato Gravi.com.br: ' . $post['nome'];
-        $mail->Body = 'Mensagem: ' . $post['message'];
+        $mail->Body =
+            'Fone: ' . $post['phone'] . PHP_EOL .
+            'Mensagem: ' . $post['message'];
 
-        $mail->addAddress('elvis.gravi@gmail.com');
+        $mail->addAddress('elvis@gravi.com.br');
 
-        $this->model()->saveContact($mail);
+        $this->model()->saveContact($post);
 
         if ($mail->send()) {
             $this->commitHide('#sendmail');
             $this->commitReplace('Em breve entraremos em contato. Obrigado! Aproveite e nos siga no twitter!', '#mailmsg');
         }
         else
-            $this->commitReplace('Oh não, o serviço de e-mail está lotado! Por favor, envie um e-mail para mkt@gravi.com.br e nos informe sobre isso!', '#mailmsg');
+            $this->commitReplace('Oh não, o serviço de e-mail está lotado! Por favor, envie um e-mail para contato@gravi.com.br e nos informe sobre isso!', '#mailmsg');
 
 
     }

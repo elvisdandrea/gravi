@@ -7,11 +7,12 @@ class contactModel extends Model {
         parent::__construct($connection);
     }
 
-    public function saveContact($mail) {
+    public function saveContact($post) {
 
-        $this->addInsertSet('name',  $mail->FromName);
-        $this->addInsertSet('email', $mail->From);
-        $this->addInsertSet('message', $mail->Body);
+        $this->addInsertSet('name',  $post['nome']);
+        $this->addInsertSet('email', $post['email']);
+        $this->addInsertSet('phone', $post['phone']);
+        $this->addInsertSet('message', $post['message']);
 
         $this->setInsertTable('contacts');
         $this->runInsert();
