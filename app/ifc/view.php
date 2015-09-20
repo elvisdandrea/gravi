@@ -78,13 +78,15 @@ class View {
 
         defined('T_CSSURL')  || define('T_CSSURL',  MAINURL . '/tpl/' . $this->templateName . '/res/css' );
         defined('T_JSURL')   || define('T_JSURL',   MAINURL . '/tpl/' . $this->templateName . '/res/js' );
-        defined('T_IMGURL')  || define('T_IMGURL',  MAINURL . '/tpl/' . $this->templateName . '/res/images' );
+        defined('T_IMGURL')  || define('T_IMGURL',  MAINURL . '/tpl/' . $this->templateName . '/res/img' );
         defined('T_FONTURL') || define('T_FONTURL', MAINURL . '/tpl/' . $this->templateName . '/res/fonts' );
+        defined('T_RESURL')  || define('T_RESURL',  MAINURL . '/tpl/' . $this->templateName . '/res' );
 
         defined('T_CSSDIR')  || define('T_CSSDIR',  MAINDIR . '/tpl/' . $this->templateName . '/res/css' );
         defined('T_JSDIR')   || define('T_JSDIR',   MAINDIR . '/tpl/' . $this->templateName . '/res/js' );
-        defined('T_IMGDIR')  || define('T_IMGDIR',  MAINDIR . '/tpl/' . $this->templateName . '/res/images' );
+        defined('T_IMGDIR')  || define('T_IMGDIR',  MAINDIR . '/tpl/' . $this->templateName . '/res/img' );
         defined('T_FONTDIR') || define('T_FONTDIR', MAINDIR . '/tpl/' . $this->templateName . '/res/fonts' );
+        defined('T_RESDIR')  || define('T_RESDIR',  MAINDIR . '/tpl/' . $this->templateName . '/res' );
 
     }
 

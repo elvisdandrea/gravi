@@ -66,7 +66,7 @@ class homeControl extends Control {
         }
 
         $this->view()->loadTemplate('home');
-
+        $this->view()->appendJs('home');
         echo $this->view()->render();
         $this->terminate();
     }

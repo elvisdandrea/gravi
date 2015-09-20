@@ -65,7 +65,7 @@ define('RESTFUL', '0');                         // If attends to ReSTful request
 
 define('HOME',      'home');                         // Home Sweet Home - The module name to be used as home module
 define('AUTH',      'auth');                         // The module to be used as authentication module
-define('TEMPLATE',  'gravi');                        // The view template
+define('TEMPLATE',  'agency');                       // The view template
 
 define('LNG', 'pt');                            // Site Language
 
