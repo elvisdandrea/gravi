@@ -12,7 +12,7 @@
                     <div class="modal-body">
                         <!-- Project Details Go Here -->
                         <h2>Imobiliária Esselence</h2>
-                        <p class="item-intro text-muted">Front-end e Integração com API Vista. Confira: <a href="http://esselence.com.br" target="_blank">esselence.com.br</a></p>
+                        <p class="item-intro text-muted">Front-end e Integração com API Vista. Confira: <a href="http://187.1.143.54/" target="_blank">esselence.com.br</a></p>
                         <img class="img-responsive img-centered" src="{$smarty.const.T_IMGURL}/portfolio/esselence.png" alt="">
                         <p></p>
 
