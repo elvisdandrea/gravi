@@ -8,8 +8,11 @@
             </div>
         </div>
         <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 id="mailmsg" class="section-heading"></h2>
+            </div>
             <div class="col-lg-12">
-                <form name="sentMessage" id="contactForm" action="{$smarty.const.BASEDIR}contact/send" novalidate>
+                <form name="sentMessage" id="sendmail" action="{$smarty.const.BASEDIR}contact/send" novalidate>
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">

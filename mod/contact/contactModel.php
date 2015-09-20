@@ -9,6 +9,7 @@ class contactModel extends Model {
 
     public function saveContact($post) {
 
+        $this->addInsertSet('sdate', 'now()', false);
         $this->addInsertSet('name',  $post['nome']);
         $this->addInsertSet('email', $post['email']);
         $this->addInsertSet('phone', $post['phone']);

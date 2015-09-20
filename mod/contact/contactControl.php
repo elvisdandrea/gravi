@@ -44,7 +44,7 @@ class contactControl extends Control {
 
         if ($mail->send()) {
             $this->commitHide('#sendmail');
-            $this->commitReplace('Em breve entraremos em contato. Obrigado! Aproveite e nos siga no twitter!', '#mailmsg');
+            $this->commitReplace('Em breve entraremos em contato. Obrigado!', '#mailmsg');
         }
         else
             $this->commitReplace('Oh não, o serviço de e-mail está lotado! Por favor, envie um e-mail para contato@gravi.com.br e nos informe sobre isso!', '#mailmsg');

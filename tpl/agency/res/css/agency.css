@@ -116,7 +116,7 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .btn-primary .badge {
-    color: #fed136;
+    color: #46375C;
     background-color: #fff;
 }
 
@@ -161,12 +161,12 @@ fieldset[disabled] .btn-xl:active,
 .btn-xl.disabled.active,
 .btn-xl[disabled].active,
 fieldset[disabled] .btn-xl.active {
-    border-color: #fed136;
-    background-color: #fed136;
+    border-color: #46375C;
+    background-color: #46375C;
 }
 
 .btn-xl .badge {
-    color: #fed136;
+    color: #46375C;
     background-color: #fff;
 }
 
@@ -228,7 +228,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
     color: #fff;
-    background-color: #ce4034;
+    background-color: #46375C;
 }
 
 @media(min-width:768px) {
@@ -517,7 +517,7 @@ section h3.section-subheading {
     border-radius: 100%;
     text-align: center;
     color: #fff;
-    background-color: #fed136;
+    background-color: #46375C;
 }
 
 .timeline>li .timeline-image h4 {
@@ -704,7 +704,7 @@ section#contact .form-group textarea.form-control {
 }
 
 section#contact .form-control:focus {
-    border-color: #fed136;
+    border-color: #46375C;
     box-shadow: none;
 }
 
@@ -782,7 +782,7 @@ ul.social-buttons li a {
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
-    background-color: #fed136;
+    background-color: #46375C;
 }
 
 .btn:focus,
@@ -908,20 +908,20 @@ body {
     height: 100px;
 }
 
-.filler h2 {
+.filler h2, .filler2 h2 {
     text-shadow: 1px 1px 8px #000;
     font-size: 4em;
     margin-top: auto;
 }
 
 @media(max-width: 1024px) {
-    .filler h2 {
+    .filler h2, .filler2 h2 {
         font-size: 2.6em;
     }
 }
 
 @media(max-width: 768px) {
-    .filler h2 {
+    .filler h2, .filler2 h2 {
         font-size: 1.7em;
     }
 }
@@ -933,6 +933,7 @@ body {
     background-image: url("../img/center2-bg.jpg");
     background-position: center center;
     background-size: cover;
+    height: 100px;
 }
 
 .wrapper, .wrapper-bottom {
