@@ -429,8 +429,9 @@ section h3.section-subheading {
 }
 
 #portfolio .portfolio-item .portfolio-caption h4 {
-    margin: 0;
     text-transform: none;
+    color: #555;
+    margin-bottom: 10px;
 }
 
 #portfolio .portfolio-item .portfolio-caption p {
