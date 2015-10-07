@@ -9,7 +9,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand page-scroll" href="#page-top">GRAVI</a>
+            <a class="navbar-brand page-scroll" href="#page-top"><img src="{$smarty.const.T_IMGURL}/logo-n.png" ></a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->

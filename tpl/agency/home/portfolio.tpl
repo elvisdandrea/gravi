@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading">Portfólio</h2>
+                <h2 class="section-heading">Clientes</h2>
                 <h3 class="section-subheading text-muted">Conheça alguns de nossos trabalhos recentes.</h3>
             </div>
         </div>

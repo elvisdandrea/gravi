@@ -6,8 +6,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Desenvolvimento de Sites, E-commerce e aplicativos Mobile">
+    <meta name="author" content="GRAVI">
+    <meta title="GRAVI Desenvolvimento de Sites">
+    <meta property="og:title" content="GRAVI - céu não é o limite">
+    <meta property="og:description" content="Desenvolvimento de Sites, E-commerce e aplicativos Mobile">
+    <meta property="og:image" content="{$smarty.const.T_IMGURL}/logo-n.png">
+    <meta property="og:url" content="{$smarty.const.MAINURL}">
 
     <title>Gravi - O céu não é o limite</title>
 
