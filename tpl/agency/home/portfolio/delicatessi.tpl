@@ -14,7 +14,9 @@
                         <h2>Delicatessi</h2>
                         <p class="item-intro text-muted">Loja virtual com gestor CRM. Confira: <a href="http://delicatessi.com.br/" target="_blank">delicatessi.com.br</a></p>
                         <a href="http://delicatessi.com.br/" target="_blank"><img class="img-responsive img-centered" src="{$smarty.const.T_IMGURL}/portfolio/delicatessi.png" alt=""></a>
-                        <p></p>
+                        <p>Um site minimalista com foco em desempenho, velocidade de resposta e experiência do usuário.<br>
+                        Totalmente integrado ao sistema de gestão CRM <a href="http://orbit.gravi.com.br/">ORBIT</a><br>
+                        100% responsivo, com perfeita visualização em dispositivos móveis.</p>
 
                         <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fechar</button>
                     </div>
